@@ -1,0 +1,15 @@
+#box1, 
+#box2, 
+#box3 {
+    width: 100px;
+    height: 100px;
+    border: 1px solid burlywood;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#box1 {
+    /*padding: 10px 20px 30px 40px; /*top/bottom, left/right; top, left/right, bottom; top, right, bottom, left*/
+    padding-left: 10px;
+    padding-top: 200px;
+}

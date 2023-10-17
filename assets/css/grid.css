@@ -1,0 +1,88 @@
+/* .grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid-item {
+    background-color: aqua;
+    border: 1px solid black;
+    text-align: center;
+    padding: 20px
+} */
+
+/* solution 1
+
+.grid-container2{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 150px 150px;
+    grid-gap: 10px;
+}
+
+#hero {
+    background-color: orangered;
+    grid-column: 1 / span 2;
+}
+
+#sidebar {
+    background-color: orange;
+    grid-column: 3;
+    grid-row: span 2;
+}
+
+.content {
+    background-color: olive;    
+} 
+*/
+/* solution 2
+.grid-container2{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 150px 150px;
+    grid-gap: 20px;
+}
+
+
+#hero {
+    background-color: orangered;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+}
+
+#sidebar {
+    background-color: orange;
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 2;
+}
+
+.content {
+    background-color: olive;    
+    grid-row: 2 / span 1;
+}  */
+
+.grid-container3{
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 150px 300px 150px;
+    grid-gap: 20px;
+}
+
+#home3{
+    background-color: orange;
+    grid-column: 1 / span 3;
+}
+
+#sidebar3{
+    background-color: olive;
+    grid-column: 1 / span 1;
+}
+
+#content3{
+    background-color: orangered;
+    grid-column: 2 / span 2;
+}
+
+#navbar3{
+    background-color: olivedrab;
+    grid-column: 1 / span 3;
+}

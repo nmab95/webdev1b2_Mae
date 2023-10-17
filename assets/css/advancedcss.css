@@ -1,0 +1,99 @@
+.box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid gray;
+    margin: 50px;
+}
+
+.transition{
+    /*background-color: violet;
+    transition: width 1s, transform 10s;*/
+    background-color: violet;
+    transition: transform 10s;
+}
+
+.transition:hover{
+    width: 350px;
+    transform: translateX(0);
+    width: 350px;
+    transform: translateX(300%);
+}
+
+
+
+.animation1{
+    animation-name: animation1;
+    animation-duration: 20s;
+    background-color: bisque;
+    animation-iteration-count: infinite;
+}
+@keyframes animation1{
+    /*from {background-color: bisque;}
+    to {background-color: tomato;}*/
+
+    0% { background-color: aliceblue; width: 25px;}
+    25% { background-color: aquamarine; width: 250;}
+    50% { background-color: blue; width: 200px};
+    75% { background-color: yellow; width: 100px;}
+    100% {background-color: olivedrab; width: 200px}
+}
+
+/*.rotate-element{
+    transform: rotate(45deg);
+    background-color: green;
+}*/
+
+.rotate-element{
+    animation-name: rotation1;
+    background-color: green;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes rotation1{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+/*.scale-element{
+    transform: scale(1.5);
+    background-color: blue;
+}*/
+
+.scale-element{
+    animation-name: scaling1;
+    background-color: blue;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes scaling1{
+    0% {transform: scale(1);}
+    100% {transform: scale(2.5);}
+}
+
+
+.skew-element{
+    transform: skew(30deg, 20deg);
+    background-color: yellow;
+}
+
+/*.translate-element{
+    transform: translate(50px, 20px);
+    background-color: orange;
+}*/
+
+.translate-element {
+    animation-name: translation1;
+    background-color: orange;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes translation1{
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-300px);} /*Why is the negative value going up?*/
+    100% {transform: translateY(300px);}
+}
+
+.combined-transform{
+    transform: rotate(45deg) scale(1.5) skew(10deg, 5deg) translate(20px, 10px);
+    background-color: brown;
+}
