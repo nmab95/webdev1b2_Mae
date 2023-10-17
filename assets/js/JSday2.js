@@ -22,7 +22,7 @@ console.log(product);
 if (product % 2==0){
     console.log('Product is an even number');
 } else {
-    console.log('Product is an odd number');
+    console.log('Product is an odd number and github change');
 }
 
 if (product % 3==0){
@@ -30,3 +30,8 @@ if (product % 3==0){
 } else {
     console.log('Not divisible by 3');
 }
+
+for (var counter=0; counter<100; counter++) {
+    console.log('github change counter', counter);
+}
+console.log("new");
