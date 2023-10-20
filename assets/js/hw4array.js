@@ -7,7 +7,7 @@ while (true) {
     if (fruitNum >= 3 && fruitNum <= 10) {
         // alert("Valid " + fruitNum); //check
         for (let x=0; x<fruitNum; x++){
-            fruit[x] = prompt("Enter fruit:");
+            fruit[x] = prompt("Enter fruit["+[x+1]+"]:");
         }
         break;
     } else {
@@ -33,7 +33,7 @@ while (true) {
     if (vegNum >= 3 && vegNum <= 10) {
         // alert("Valid " + vegNum); //check
         for (let x=0; x<vegNum; x++){
-            veggie[x] = prompt("Enter vegetable:");
+            veggie[x] = prompt("Enter vegetable["+[x+1]+"]:");
         }
         break;
     } else {
