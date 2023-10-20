@@ -3,7 +3,6 @@ var fruit=[];
 while (true) {
     let userIn = prompt("How many fruits do you want [3-10]?");
     var fruitNum = parseInt(userIn);
-
     if (fruitNum >= 3 && fruitNum <= 10) {
         // alert("Valid " + fruitNum); //check
         for (let x=0; x<fruitNum; x++){
@@ -14,7 +13,6 @@ while (true) {
         alert("Please enter a number within the specified range.");
     }
 }
-
 console.log("Fruits entered: ", fruit);
 console.log("First fruit: ", fruit[0]);
 console.log("Last fruit: ", fruit[fruitNum - 1]);
@@ -23,6 +21,7 @@ console.log("Second fruit: ", fruit[1]);
 fruit.splice(2, 1);
 fruit.splice(0, 1);
 console.log("Fruits left: ", fruit);
+
 
 //---------------------VEGETABLES-------------------------//
 var veggie=[];
@@ -75,14 +74,11 @@ if (foodIndex !== -1) {
 } else {
     alert("Food not found.");
 }
-
 if (food.length > 0) {
     food[0] = "START";
     food[food.length - 1] = "END";
 }
-
 for (let i = 0; i < food.length; i++) {
     food[i] = food[i].toUpperCase();
 }
-
 console.log(food);
