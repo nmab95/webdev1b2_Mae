@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Calculator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="assets/css/calculator.css">
+    </head>
+<!--    <body class="flex justify-center items-center content-center flex-wrap"> -->
+    <body class="flex justify-center items-center">
+        <div id="calcContainer">
+            <div id="calcContent" class="flex flex-col">
+                <div id="displayRow"  class="text-white text-6xl flex justify-end">Answer</div>
+                <div id="buttonsRow" class="flex flex-column justify-between">
+                    <div class="buttonItem text-2xl font-light text-gray-400 flex justify-center items-center"
+                    onclick="clearCalc()">AC</div>
+                    <div class="buttonItem text-2xl font-light text-gray-400 flex justify-center items-center"
+                    onclick="positiveNegative()">+/-</div>
+                    <div class="buttonItem text-2xl font-light text-gray-400 flex justify-center items-center"
+                    onclick="percent()">%</div>
+                    <div class="buttonItem text-2xl font-light text-gray-400 flex justify-center items-center"
+                    onclick="storeOperator('/')">/</div>                    
+                </div>
+                <div id="buttonsRow" class="flex flex-column justify-between">
+                    <div class="buttonItem text-2xl font-bold text-white flex justify-center items-center"
+                    onclick="pressNumber(7)">7</div>
+                    <div class="buttonItem text-2xl font-bold text-white flex justify-center items-center"
+                    onclick="pressNumber(8)">8</div>
+                    <div class="buttonItem text-2xl font-bold text-white flex justify-center items-center"
+                    onclick="pressNumber(9)">9</div>
+                    <div class="buttonItem text-2xl font-light text-white flex justify-center items-center"
+                    onclick="storeOperator('*')">*</div>                    
+                </div>
+                <div id="buttonsRow" class="flex flex-column justify-between">
+                    <div class="buttonItem text-2xl font-bold text-white flex justify-center items-center"
+                    onclick="pressNumber(4)">4</div>
+                    <div class="buttonItem text-2xl font-bold text-white flex justify-center items-center"
+                    onclick="pressNumber(5)">5</div>
+                    <div class="buttonItem text-2xl font-bold text-white flex justify-center items-center"
+                    onclick="pressNumber(6)">6</div>
+                    <div class="buttonItem text-2xl font-light text-white flex justify-center items-center"
+                    onclick="storeOperator('-')">-</div>                    
+                </div>
+                <div id="buttonsRow" class="flex flex-column justify-between">
+                    <div class="buttonItem text-2xl font-bold text-white flex justify-center items-center"
+                    onclick="pressNumber(1)">1</div>
+                    <div class="buttonItem text-2xl font-bold text-white flex justify-center items-center"
+                    onclick="pressNumber(2)">2</div>
+                    <div class="buttonItem text-2xl font-bold text-white flex justify-center items-center"
+                    onclick="pressNumber(3)">3</div>
+                    <div class="buttonItem text-2xl font-light text-white flex justify-center items-center"
+                    onclick="storeOperator('+')">+</div>                    
+                </div>
+                <div id="buttonsRow" class="flex flex-column justify-between">
+                    <div class="buttonItem text-2xl font-bold text-white flex basis-[155px] justify-center items-center"
+                    onclick="pressNumber(0)">0</div>
+                    <div class="buttonItem text-2xl font-bold text-white flex justify-center items-center"
+                    onclick="pressDecimalPoint()">.</div>
+                    <div class="buttonItem text-2xl font-light text-white flex justify-center items-center"
+                    onclick="compute()">=</div>                    
+                </div>
+            </div>
+        </div>
+        <script src="assets/js/calculator.js" async defer></script>
+    </body>
+</html>
