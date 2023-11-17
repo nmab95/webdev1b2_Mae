@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Portfolio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/style.css">
+        <link rel="stylesheet" href="assets/mediaqueries.css">
+    </head>
+    
+    <body>
+        <nav id="desktop-nav">
+            <div class="logo">Nylma Mae Barce</div>
+            <div>
+                <ul class="nav-links">
+                    <li> <a href="./#home">Home</a></li>
+                    <li> <a href="./#about">About Me</a></li>
+                    <li> <a href="./#gallery">Gallery</a></li>
+                    <li> <a href="./assets/images/CV/Nylma Mae Barce - CV.pdf" target="_blank">Resume</a></li>
+                    <li> <a href="./#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="profile-nav">
+            <div class="logo">Nylma Mae Barce</div>
+            <div class="profile-menu">
+                <div class="profile-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li> <a href="./#profile">Home</a></li>
+                    <li> <a href="./#about">About Me</a></li>
+                    <li> <a href="./#gallery">Personalized Gallery</a></li>
+                    <li> <a href="./assets/images/CV/Nylma Mae Barce - CV.pdf" target="_blank">Resume</a></li>
+                    <li> <a href="./#contact">Contact Me</a></li>
+                </div>
+            </div>
+        </nav>
+
+        <section id="profile">
+            <div class="section_pic-container">
+                <img src="./assets/images/profilePicture.jpg" alt="Nylma Mae Barce profile picture">
+            </div>
+            <div class="section_text">
+                <p class="section_text_p1">Hello, I'm</p>
+                <h1 class="title">Nylma Mae Barce</h1>
+                <p class="section_text_p2">a Quality Assurance Engineer</p>
+                <div class="btn_container">
+                    <button class="btn btn-color-1" onclick="window.open('./assets/images/CV/Nylma Mae Barce - CV.pdf')">Download CV</button>
+                    <button class="btn btn-color-2" onclick="location.href='./#contact'">Contact Info</button>
+                </div>
+                <div id="socials-container">
+                    <a href="https://www.linkedin.com/in/nmbarce/" target="_blank">
+                        <img src="./assets/images/linkedin3.png" alt="My LinkedIn profile" class="icon">
+                    </a>
+                    <a href="https://github.com/nmab95/" target="_blank">
+                        <img src="./assets/images/github3.png" alt="My Github profile" class="icon">
+                    </a>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <p class="section_text_p1">Know Me Better</p>
+            <h1 class="title">About Me</h1>
+            <div class="section-container">
+                <div class="section_pic-container">
+                    <img src="./assets/images/aboutMe.jpg" alt="Profile picture" class="about-pic">
+                </div>
+                <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <img src="./assets/images/exp3.png" alt="exp icon" class="icon">
+                            <h3>Experience</h3>
+                            <p>7+ years<br> Quality Assurance Engineer</p>
+                        </div>
+                        <div class="details-container">
+                            <img src="./assets/images/education3.png" alt="education icon" class="icon">
+                            <h3>Education</h3>
+                            <p>BS Computer Engineering<br>Cavite State University</p>
+                        </div>
+                    </div>
+                    <div class="text-container">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin imperdiet mi id dolor sagittis pulvinar. Etiam in elit a orci posuere semper. 
+                            Praesent libero libero, consequat quis enim ornare, tempus pretium arcu. Vestibulum sit amet finibus metus. Sed luctus condimentum elit at malesuada. 
+                            Curabitur tempor elit tempus est tristique, eget euismod lorem aliquet. Ut quis placerat mauris. Aenean convallis molestie metus, sit amet euismod purus feugiat in. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/images/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+        </section>
+
+        <section id="experience">
+            <p class="section_text_p1">Here is  my</p>
+            <h1 class="title">Experience</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Quality Assurance</h2>
+                        <div class="article-container">
+                            <article>
+                                <img src="./assets/images/check3.png" alt="exp icon" class="icon">
+                                <div>
+                                    <h3>HTML/CSS</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/images/check3.png" alt="exp icon" class="icon">
+                                <div>
+                                    <h3>JavaScript</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/images/check3.png" alt="exp icon" class="icon">
+                                <div>
+                                    <h3>Postman</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="article-container">
+                            <article>
+                                <img src="./assets/images/check3.png" alt="exp icon" class="icon">
+                                <div>
+                                    <h3>Manual Testing</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/images/check3.png" alt="exp icon" class="icon">
+                                <div>
+                                    <h3>Selenium</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/images/check3.png" alt="exp icon" class="icon">
+                                <div>
+                                    <h3>Project Management</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/images/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#gallery'">
+        </section>
+
+        <section id="gallery">
+            <p class="section_text_p1">Browse My Personalized</p>
+            <h1 class="title">Gallery</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <!-- <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/images/proj1_Netflix.png" alt="Project Netflix" class="project_img">
+                        </div>
+                        <h2 class="experience-sub-title project-title">Netflix Homepage</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/nmab95/webdev1b2_Mae/blob/master/netflix.html'">Github
+                            </button>
+                        </div>
+                    </div> -->
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/images/proj1_Calculator.png" alt="Project Calculator" class="project-img">
+                        </div>
+                        <h2 class="experience-sub-title project-title">Calculator</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/nmab95/webdev1b2_Mae/commit/f6630c24acdbd337911a4dc462ed07b6eae3ed6e'">Github
+                            </button>
+                        </div>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/images/proj2_Netflix.png" atl="Project Netflix" class="project-img">
+                        </div>
+                        <h2 class="experience-sub-title project-title">Netflix Homepage</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/nmab95/webdev1b2_Mae/blob/master/netflix.html'">Github
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/images/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+        </section>
+
+        <section id="contact">
+            <p class="section_text_p1">Get in Touch</p>
+            <h1 class="title">Contact Me</h1>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <form id="contact-form" method="post"></form>
+                        <label for="name">First Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name">
+
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" placeholder="Your email">
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Write something.." style="height:150px"></textarea>
+        
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <nav>
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                    <li> <a href="./#profile">Home</a></li>
+                    <li> <a href="./#about">About Me</a></li>
+                    <li> <a href="./#gallery">Gallery</a></li>
+                    <li> <a href="./#contact">Contact Me</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <p>Copyright &#169; 2023 Mae Barce. All Rights Reserved.</p>
+          </footer>
+
+        <script src="assets/script.js" async defer></script>
+    </body>
+</html>
